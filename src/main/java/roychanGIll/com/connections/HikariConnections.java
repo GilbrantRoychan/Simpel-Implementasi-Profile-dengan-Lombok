@@ -19,8 +19,8 @@ public class HikariConnections {
 
         HikariConfig hikariConfig = new HikariConfig();
         hikariConfig.setJdbcUrl(System.getenv("JDBC_URL"));
-        hikariConfig.setUsername(System.getenv("username"));
-        hikariConfig.setPassword(System.getenv("password"));
+        hikariConfig.setUsername(System.getenv("user"));
+        hikariConfig.setPassword(System.getenv("pass"));
 
 
         // change Connection Pool
